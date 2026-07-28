@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Hits - O Blog dos Filmes do Momento</title>
+    <style>
+        /* --- ESTILIZAÇÃO DO TEMA NETFLIX --- */
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #141414; /* Fundo clássico da Netflix */
+            color: #FFFFFF;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Container de largura máxima */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* --- CABEÇALHO --- */
+        header {
+            background-color: #000000;
+            padding: 20px 0;
+            border-bottom: 3px solid #E50914; /* Linha vermelha Netflix */
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            color: #E50914; /* Vermelho Netflix */
+            margin: 0;
+            font-size: 2.2em;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 900;
+        }
+
+        header p {
+            margin: 0;
+            color: #E5E5E5;
+            font-size: 1em;
+        }
+
+        /* --- BANNER PRINCIPAL --- */
+        .hero-banner {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            background-image: linear-gradient(to bottom, rgba(20,20,20,0.1), rgba(20,20,20,1)), 
+                              url('https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: flex-end;
+            margin-bottom: 40px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .hero-text {
+            padding: 40px;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0));
+            width: 100%;
+        }
+
+        .hero-text h2 {
+            font-size: 2.5em;
+            margin: 0 0 10px 0;
+            color: #FFFFFF;
+        }
+
+        .hero-text p {
+            font-size: 1.2em;
+            margin: 0;
+            color: #CCCCCC;
+        }
+
+        /* --- GRADE DE FILMES (BLOG) --- */
+        .movies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        article {
+            background-color: #181818; /* Cor dos cards da interface da Netflix */
+            border-radius: 6px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.7);
+        }
+
+        /* Efeito ao passar o mouse imitando a interface */
+        article:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 20px rgba(229, 9, 20, 0.3);
+        }
+
+        .movie-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .movie-content {
+            padding: 20px;
+        }
+
+        .movie-tag {
+            background-color: #E50914;
+            color: white;
+            font-size: 0.75em;
+            text-transform: uppercase;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .movie-content h3 {
+            margin: 0 0 10px 0;
+            font-size: 1.4em;
+            color: #FFFFFF;
+        }
+
+        .movie-meta {
+            font-size: 0.85em;
+            color: #46D369; /* Verde de relevância da Netflix */
+            margin-bottom: 12px;
+            font-weight: bold;
+        }
+
+        .movie-content p {
+            margin: 0 0 20px 0;
+            color: #AAAAAA;
+            font-size: 0.95em;
+            line-height: 1.5;
+        }
+
+        .read-more {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9em;
+            border: 1px solid #808080;
+            padding: 8px 16px;
+            border-radius: 4px;
+            display: inline-block;
+            transition: background 0.2s, border-color 0.2s;
+        }
+
+        .read-more:hover {
+            background-color: #FFFFFF;
+            color: #000000;
+            border-color: #FFFFFF;
+        }
+
+        /* --- RODAPÉ --- */
+        footer {
+            background-color: #000000;
+            color: #808080;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 60px;
+            font-size: 0.85em;
+            border-top: 1px solid #222222;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="container header-content">
+            <h1>NETFLIX HITS</h1>
+            <p>As principais estreias e as produções mais assistidas</p>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <!-- BANNER DE DESTAQUE PRINCIPAL -->
+        <section class="hero-banner">
+            <div class="hero-text">
+                <h2>O Top 10 Mudou!</h2>
+                <p>Descubra as megaproduções e blockbusters que estão dominando as telas nesta semana.</p>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DO BLOG COM OS FILMES DO MOMENTO -->
+        <main class="movies-grid">
+
+            <!-- FILME 1 -->
+            <article>
+                <img src="https://liedkeonfilm.com/wp-content/uploads/2025/11/knives3feature1.jpg?w=1200" alt="Cena de Mistério" class="movie-img">
+                <div class="movie-content">
+                    <span class="movie-tag">Mistério / Suspense</span>
+                    <h3>Wake Up Dead Man: A Knives Out Mystery</h3>
+                    <div class="movie-meta">98% de Relevância</div>
+                    <p>O excêntrico detetive Benoit Blanc retorna para o seu caso mais perigoso e intrigante até agora, desvendando segredos enterrados em um novo e isolado cenário repleto de suspeitos.</p>
+                    <a href="#" class="read-more">Ler Análise</a>
+                </div>
+            </article>
+
+            <!-- FILME 2 -->
+            <article>
+                <img src="https://rollingstone.com.br/wp-content/uploads/2025/03/the-electric-state-com-millie-bobby-brown-e-chris-pratt-estreia-na-netflix.jpg" alt="Ficção Científica" class="movie-img">
+                <div class="movie-content">
+                    <span class="movie-tag">Ficção Científica</span>
+                    <h3>The Electric State</h3>
+                    <div class="movie-meta">95% de Relevância</div>
+                    <p>Em um passado retrofuturista alternativo, uma adolescente órfã cruza o oeste americano acompanhada por um robô amarelo e um andarilho excêntrico em busca de seu irmão desaparecido.</p>
+                    <a href="#" class="read-more">Ler Análise</a>
+                </div>
+            </article>
+
+            <!-- FILME 3 -->
+            <article>
+                <img src="https://rollingstone.com.br/wp-content/uploads/2025/11/Frankenstein-novo-filme-de-Guillermo-del-Toro-estreia-no-streaming.jpg" alt="Gótico/Fantasia" class="movie-img">
+                <div class="movie-content">
+                    <span class="movie-tag">Drama / Fantasia</span>
+                    <h3>Frankenstein de Guillermo del Toro</h3>
+                    <div class="movie-meta">93% de Relevância</div>
+                    <p>A aguardada e sombria releitura do clássico conto gótico de Mary Shelley pelas mãos do mestre do cinema fantástico. Uma história tocante e aterrorizante sobre criador e criatura.</p>
+                    <a href="analise-frankenstein.html" class="read-more">Ler Análise</a>
+                </div>
+            </article>
+
+        </main>
+    </div>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="container">
+            <p>© 2026 Netflix Hits Blog - Criado para fins de estudo em desenvolvimento web (HTML/CSS).</p>
+            <p style="margin-top: 5px; font-size: 0.9em; color: #555;">Todas as imagens são ilustrativas obtidas via banco de dados público.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
