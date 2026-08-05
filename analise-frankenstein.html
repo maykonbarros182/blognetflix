@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise: Frankenstein de Guillermo del Toro - Netflix Hits</title>
+    <style>
+        /* --- ESTILIZAÇÃO DO TEMA NETFLIX --- */
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #141414;
+            color: #FFFFFF;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 800px; /* Um pouco mais estreito para melhorar a leitura de textos longos */
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* --- CABEÇALHO --- */
+        header {
+            background-color: #000000;
+            padding: 15px 0;
+            border-bottom: 3px solid #E50914;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: #E50914;
+            text-decoration: none;
+            font-weight: 900;
+            font-size: 1.8em;
+            letter-spacing: 1px;
+        }
+
+        .btn-voltar {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-size: 0.9em;
+            border: 1px solid #FFFFFF;
+            padding: 6px 12px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+
+        .btn-voltar:hover {
+            background-color: #FFFFFF;
+            color: #000000;
+        }
+
+        /* --- BANNER DA ANÁLISE --- */
+        .article-banner {
+            position: relative;
+            width: 100%;
+            height: 450px;
+            background-image: linear-gradient(to bottom, rgba(20,20,20,0.2), rgba(20,20,20,1)), 
+                              url('https://images.unsplash.com/photo-1505635330303-31933c074da4?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: flex-end;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+
+        .banner-title {
+            padding: 40px;
+            background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0));
+            width: 100%;
+        }
+
+        .banner-title h1 {
+            font-size: 2.8em;
+            margin: 0 0 10px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        }
+
+        .meta-info {
+            color: #46D369; /* Verde Netflix */
+            font-weight: bold;
+            font-size: 0.95em;
+        }
+
+        .meta-info span {
+            color: #aaa;
+            font-weight: normal;
+            margin-left: 15px;
+        }
+
+        /* --- CONTEÚDO DO TEXTO --- */
+        .content-body {
+            background-color: #181818;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+
+        .content-body h2 {
+            color: #E50914;
+            font-size: 1.8em;
+            margin-top: 30px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+        }
+
+        .content-body p {
+            color: #CCCCCC;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        .content-body strong {
+            color: #FFFFFF;
+        }
+
+        /* --- GALERIA / IMAGENS INTERNAS --- */
+        .mid-article-img {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin: 30px 0;
+            border: 1px solid #333;
+        }
+
+        .caption {
+            text-align: center;
+            color: #777;
+            font-size: 0.9em;
+            margin-top: -20px;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        /* --- VERDITO / NOTA --- */
+        .veredito-box {
+            background-color: #222;
+            border-left: 5px solid #E50914;
+            padding: 20px;
+            margin-top: 40px;
+            border-radius: 4px;
+        }
+
+        .veredito-box h3 {
+            margin: 0 0 10px 0;
+            color: #FFFFFF;
+        }
+
+        /* --- RODAPÉ --- */
+        footer {
+            background-color: #000000;
+            color: #808080;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 60px;
+            font-size: 0.85em;
+            border-top: 1px solid #222222;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="container header-content">
+            <a href="index.html" class="logo">NETFLIX HITS</a>
+            <a href="index.html" class="btn-voltar">← Voltar ao Início</a>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <!-- BANNER PRINCIPAL DO FILME -->
+        <div class="article-banner">
+            <div class="banner-title">
+                <h1>Frankenstein de Guillermo del Toro: A Obra-Prima Gótica da Netflix</h1>
+                <div class="meta-info">
+                    93% de Relevância <span>• 2h 20min • Crítica Especializada</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- CORPO DA ANÁLISE -->
+        <main class="content-body">
+            
+            <p>A espera foi longa, mas a adaptação de <strong>Frankenstein</strong> dirigida por Guillermo del Toro finalmente chegou à Netflix, provando que o clássico de Mary Shelley ainda tem muita alma para extrair. Longe de ser apenas mais um filme de monstro genérico, a produção se consolida como uma poesia visual melancólica e aterrorizante.</p>
+
+            <h2>A Visão Única do Diretor</h2>
+            <p>Guillermo del Toro sempre foi o cineasta dos incompreendidos e das criaturas marginalizadas. Em sua versão do Prometeu Moderno, o foco muda drasticamente do horror puro para a <strong>empatia profunda</strong> pela Criatura. O design do monstro foge do clichê dos parafusos no pescoço, entregando uma figura visceral, repleta de cicatrizes que contam a dor da sua rejeição.</p>
+            
+            <p>A dinâmica entre o Dr. Victor Frankenstein e sua criação é o coração doloroso do filme. Del Toro questiona a todo momento: <em>quem é o verdadeiro monstro?</em> O criador arrogante que brinca de ser Deus ou a criatura que apenas busca um lugar em um mundo que a odeia?</p>
+
+            <!-- SEGUNDA IMAGEM (VIBE DE LABORATÓRIO/SOMBRIA) -->
+            <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=800&q=80" alt="Ambiente sombrio e misterioso" class="mid-article-img">
+            <div class="caption">A fotografia do longa abusa de sombras e tons frios para ditar o clima isolado da história.</div>
+
+            <h2>Fotografia e Direção de Arte Impecáveis</h2>
+            <p>Visualmente, o filme é um deleite para os fãs do horror gótico. Os cenários do laboratório de Victor misturam a estética vitoriana industrial com detalhes anatômicos quase poéticos. A fotografia utiliza uma paleta de cores frias, com verdes e azuis profundos, quebrada apenas pela presença calorosa e trágica do fogo.</p>
+
+            <!-- TERCEIRA IMAGEM (ESTÉTICA VITORIANA/FLORESTA) -->
+            <img src="https://images.unsplash.com/photo-1508193638397-1c4234db14d8?auto=format&fit=crop&w=800&q=80" alt="Floresta gótica enevoada" class="mid-article-img">
+            <div class="caption">Os cenários externos capturam o isolamento psicológico dos personagens principais.</div>
+
+            <h2>Atuações de Tirar o Fôlego</h2>
+            <p>O elenco entrega performances viscerais. O ator que dá vida à Criatura consegue transmitir angústia absoluta apenas pelo olhar e pela linguagem corporal pesada, enquanto o intérprete de Victor constrói um cientista à beira da loucura, consumido pelo próprio ego e pelo luto.</p>
+
+            <!-- BOX DE VERDITO -->
+            <div class="veredito-box">
+                <h3>Veredito Final 🏆</h3>
+                <p><strong>Frankenstein de Guillermo del Toro</strong> não é apenas o melhor filme de monstro da Netflix, mas uma das melhores adaptações literárias da década. É um conto sobre solidão, rejeição e as consequências catastróficas da ambição humana desmedida.</p>
+                <p style="color: #46D369; font-weight: bold; margin-bottom: 0;">Nota: 9.5/10 — Obrigatório para fãs de cinema e horror clássico.</p>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="container">
+            <p>© 2026 Netflix Hits Blog - Análise Crítica Cinema.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
